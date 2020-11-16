@@ -1,0 +1,36 @@
+<mat-card>
+    <mat-card-content>
+        <div class="header">
+            <h2>Create an Account</h2>
+        </div>
+        <form class="form" [formGroup] = "registerForm">
+            
+            <mat-form-field class="form-control">
+                <mat-label>Your first name</mat-label>
+                <input matInput formControlName="firstName" type="text"/>
+            </mat-form-field>
+            <mat-form-field class="form-control">
+                <mat-label>Your last name</mat-label>
+                <input matInput formControlName="lastName" type="text"/>
+            </mat-form-field>
+            <mat-form-field class="form-control">
+                <mat-label>Your email</mat-label>
+                <input matInput formControlName="email" type="text"/>
+            </mat-form-field>
+            <mat-form-field class="form-control">
+                <mat-label>Your password</mat-label>
+                <input matInput formControlName="password" type="password">
+            </mat-form-field>
+
+            <div class="form-footer">
+                <button class="register-button" mat-raised-button color="primary" mat-button (click)="createUser()">Create a User</button>
+            </div>
+
+            <div>
+                <p>Already have an Account?<a routerLink="/login">Login</a></p>
+            </div>
+              
+        </form>
+    </mat-card-content>
+</mat-card>
+

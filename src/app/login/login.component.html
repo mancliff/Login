@@ -1,0 +1,43 @@
+<mat-card>
+    <mat-card-content>
+        <div class="header">
+            <h2>Login</h2>
+        </div>
+        <form class="form" [formGroup] = "loginForm" action="">
+            <mat-form-field class="form-control" >
+                <mat-label>Your email</mat-label>
+                <input matInput formControlName="email"  type="text"/>
+            </mat-form-field>
+            <mat-form-field class="form-control">
+                <mat-label>Your password</mat-label>
+                <input formControlName="password"  matInput type="text">
+            </mat-form-field>
+
+            <div class="form-footer">
+                <button class="login" mat-raised-button color="primary" mat-button (click) ="login()">Login</button>
+            </div>
+
+            <div class="horizon-line">
+                <hr>
+            </div>
+
+            <div class="alt-login">
+                <h2>OR</h2>
+            </div>
+
+            <div class="social-face">
+                <button class="login" mat-raised-button color="primary" (click) ="facebookLogin()">Login with facebook</button>
+            </div>
+
+            <div class="social-google">
+                <button class="login" mat-raised-button color="accent" (click) ="googleLogin()">Login with google</button>
+            </div>
+
+            <div class="register">
+                <p>Don't have an account?<a routerLink="/register">Create One</a></p>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>
+
+

@@ -1,0 +1,31 @@
+:host {
+    margin-top: 10px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center; 
+    height: 100vh;
+ }
+
+ mat-card{
+    width: 600px;
+    margin: 2em auto;
+    text-align: center;
+    height: 500px;
+}
+
+button{
+    margin-left: 100px;
+    width: 400px;
+}
+
+.btn-logout{
+    
+    color: honeydew;
+}
+
+.logout{
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 20px;
+}
